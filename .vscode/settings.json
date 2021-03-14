@@ -22,6 +22,9 @@
     "plaintext": "jade"
   },
   "cSpell.ignoreWords": [
-    "autoincrement"
+    "autoincrement",
+    "ecmascript",
+    "js",
+    "prettierrc"
   ]
 }

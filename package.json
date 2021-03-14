@@ -7,8 +7,9 @@
     "build": "next build",
     "start": "next start",
     "test": "jest",
-    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+    "lint": "eslint '*/**/*.{js,jsx,ts,tsx}' --fix",
     "prettier-watch": "onchange 'pages/**/*.ts' -- prettier --write {{changed}}",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc.js",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -31,7 +32,12 @@
     "babel-jest": "^26.6.3",
     "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
     "husky": "^4.3.8",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",
@@ -50,9 +56,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts,tsx}": [
+    "./**/*.{js,jsx,ts,tsx}": [
       "eslint --fix"
-    ],
-    "*.js": "eslint --cache --fix"
+    ]
   }
 }
