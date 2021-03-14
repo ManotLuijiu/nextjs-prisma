@@ -10,6 +10,12 @@ First, create .env file on project root:
 touch .env
 ```
 
+Go to heroku.com then create 2 new apps
+One for Production another one for development (shadow database) add those URL to .env file:
+
+DATABASE_URL="postgres://some-value-here"
+SHADOW_DATABASE_URL="postgres://some-value-here"
+
 Second, run the development server:
 
 ```bash
