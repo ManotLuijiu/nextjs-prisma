@@ -1,7 +1,26 @@
 {
   "editor.fontSize": 16,
   "terminal.integrated.fontSize": 16,
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 0,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "[typescript]":{
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+  },
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "on",
+    "editor.renderWhitespace": "all",
+    "editor.acceptSuggestionOnEnter": "off"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact",
+    "vue-html": "html",
+    "plaintext": "jade"
+  },
   "cSpell.ignoreWords": [
     "autoincrement"
   ]
