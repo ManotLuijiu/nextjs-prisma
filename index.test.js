@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react';
-import App from '../../pages/index';
+import Home from './pages/index';
 
-describe('App', () => {
+describe('Home', () => {
     it('renders without crashing', () => {
-        render(<App />);
-        expect(screen.getByRole('heading', { name: 'This is Next.js &amp; Prisma Project' })).toBeInTheDocument();
+        render(<Home />);
+        expect(screen.getByRole('heading', { name: 'This is Next.js with Prisma Project' })).toBeInTheDocument();
     });
 });
