@@ -4,7 +4,13 @@ This boilerplate is already including Material-Ui and Tailwindcss for styling. U
 
 ## Getting Started
 
-First, run the development server:
+First, create .env file on project root:
+
+```bash
+touch .env
+```
+
+Second, run the development server:
 
 ```bash
 npm i
