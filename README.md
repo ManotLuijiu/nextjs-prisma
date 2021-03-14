@@ -16,6 +16,25 @@ One for Production another one for development (shadow database) add those URL t
 DATABASE_URL="postgres://some-value-here"
 SHADOW_DATABASE_URL="postgres://some-value-here"
 
+Then, create one model for instance:
+`model Sighting {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  latitude  Float
+  longitude Float
+}`
+
+credit: [Building a Backend for React](https://www.youtube.com/watch?v=Bqacj0iOL68&t=825s)
+
+after you have first model go to your terminal at your project root run this command:
+
+`npx prisma migrate dev --preview-feature`
+
+you will be prompt for '? Name of migration'
+you can type: 'CreateSighting'
+
+Prisma will be Generated Prisma Client for you.
+
 Second, run the development server:
 
 ```bash
