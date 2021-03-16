@@ -21,7 +21,7 @@ export default function Footer() {
           <span className="ml-3 text-xl">MooCoding</span>
         </a>
         <span className="text-xs inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-          <div>
+          <div className="mr-4">
             Icons made by{' '}
             <a href="https://www.freepik.com" title="Freepik">
               Freepik
@@ -31,6 +31,7 @@ export default function Footer() {
               www.flaticon.com
             </a>
           </div>
+          <img src="/powered_by_google/desktop/powered_by_google_on_white.png" height="10" />
         </span>
       </div>
     </footer>
