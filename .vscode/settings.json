@@ -2,6 +2,7 @@
   "editor.fontSize": 16,
   "terminal.integrated.fontSize": 16,
   "window.zoomLevel": 0,
+  "workbench.colorTheme": "Ayu Mirage",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
@@ -21,8 +22,37 @@
     "vue-html": "html",
     "plaintext": "jade"
   },
+  "todohighlight.keywords": [
+    "DEBUG:",
+    "REVIEW:",
+    {
+      "text": "NOTE:",
+      "color": "#ff0000",
+      "backgroundColor": "yellow",
+      "overviewRulerColor": "grey",
+      "borderRadius": "2px"
+  },
+  {
+      "text": "HACK:",
+      "color": "#000",
+      "isWholeLine": false,
+  },
+  {
+      "text": "TODO:",
+      "color": "red",
+      "border": "1px solid red",
+      "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
+      "backgroundColor": "rgba(0,0,0,.2)",
+      //other styling properties goes here ... 
+  }
+  ],
+  "todohighlight.defaultStyle": {
+    "color": "#ffffff",
+    "backgroundColor": "#ffab00"
+  },
   "cSpell.ignoreWords": [
     "autoincrement",
+    "combobox",
     "ecmascript",
     "js",
     "prettierrc"

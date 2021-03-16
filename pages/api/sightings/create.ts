@@ -16,8 +16,8 @@ export default async function (req: NextApiRequest, res: NextApiResponse) {
     res.status(201);
     res.json({ sighting });
   } catch (err) {
+    console.error('Error from create.js', err);
     res.status(500).json({ error: `${err} และ ไม่สามารถบันทึกข้อมูล กรุณาตรวจสอบข้อมูลอีกครั้ง` });
-    // res.json({ error: `${err} and "Sorry unable to save sighting to database"` });
   } finally {
     await prisma.$disconnect();
   }

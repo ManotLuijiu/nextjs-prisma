@@ -17,6 +17,11 @@ class MyDocument extends Document {
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0984e3" />
           <meta name="msapplication-TileColor" content="#0984e3" />
           <meta name="theme-color" content="#ffffff" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;500;600;700&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />
